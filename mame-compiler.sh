@@ -75,7 +75,7 @@ done
 SUBTARGET=$(date +%Y)$(date +%m)$(date +%d)$(date +%H)$(date +%M)
 
 # compiler
-$EMMAKE_CMD make SUBTARGET=$SUBTARGET SOURCES=$SOURCES
+$EMMAKE_CMD make SUBTARGET=$SUBTARGET SOURCES=$SOURCES WEBASSEMBLY=1
 
 if [ ! -d "$OUTPUT_PATH" ]; then
   mkdir $OUTPUT_PATH
